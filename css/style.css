@@ -1,0 +1,824 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.wrapper_footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  height: 160px;
+  background-color: #2b2b2b;
+  position: relative;
+}
+
+.footer_content {
+  max-width: 1330px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.Contact {
+  padding: 0px 0px;
+  font-size: 25px;
+  font-family: "Oswald", sans-serif;
+  color: #fff;
+}
+
+.Contacts {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  position: absolute;
+  top: 5px;
+  right: 100px;
+}
+
+.Contacts a {
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 17px;
+  margin: 0px 0px 0px 0px;
+}
+
+.laws {
+  color: #fff;
+  font-size: 10px;
+  bottom: 0;
+}
+
+.law {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.fa-instagram {
+  font-size: 25px;
+  margin-top: 5px;
+  margin-left: 0px;
+  color: #fff;
+}
+
+.fa-instagram:hover {
+  color: #cf6591;
+}
+
+.top {
+  position: fixed;
+  z-index: 40;
+  right: -230px;
+  bottom: 15px;
+  border-radius: 90px;
+  background-color: #0000008d;
+  content: "";
+  postion: absolute;
+  width: 50px;
+  height: 50px;
+}
+
+.topf.fall {
+  opacity: 1;
+  transition: 16s;
+}
+
+.topf {
+  opacity: 0;
+  transition: 0.3s;
+  position: fixed;
+  z-index: 40;
+  right: -120px;
+  bottom: 15px;
+  border-radius: 90px;
+  background-color: #505454ca;
+  content: "";
+  postion: absolute;
+  width: 50px;
+  height: 50px;
+  animation-name: circle;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-delay: 1s;
+  animation-fill-mode: backwards;
+}
+
+.fa-angle-double-up {
+  color: #fff;
+  font-size: 35px;
+  padding: 5px 14.5px;
+}
+
+@keyframes circle {
+  0% {
+    width: 50px;
+    height: 50px;
+    right: 15px;
+    bottom: 15px;
+  }
+  100% {
+    width: 60px;
+    height: 60px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
+.swiper-container {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin: 30px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  height: 200px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  flex-direction: inherit;
+}
+
+.img-slider {
+  width: 100%;
+  /* Ширина области */
+  border-top: 4px solid rgba(0, 0, 0, 0.2);
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  /* Обнуляем отступы */
+  text-align: center;
+}
+
+.img-slider img {
+  box-shadow: 10px 10px 5px #010408d2;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  /* Ширина изображений */
+  height: 300px;
+  /* Высота изображении */
+  object-fit: cover;
+}
+
+.swiper-pagination {
+  font-family: "Oswald";
+  font-size: 20px;
+  color: #fff;
+  height: 25px;
+}
+
+.Case2 {
+  width: 100%;
+  height: 550px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: 60px;
+  overflow-x: hidden;
+}
+
+.C2 {
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  width: 100%;
+  /* Ширина области */
+  padding-right: 28px;
+  margin-top: -20px;
+  height: 500px;
+}
+
+.C2 img {
+  border-top: 4px solid rgba(0, 0, 0, 0.2);
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  margin: 0;
+  /* Обнуляем отступы */
+  box-shadow: 10px 10px 5px #010408d2;
+  max-width: 100%;
+  margin: auto;
+  width: 100%;
+  /* Ширина изображений */
+  height: 500px;
+  /* Высота изображении */
+  object-fit: cover;
+}
+
+.preloader {
+  /*фиксированное позиционирование*/
+  position: fixed;
+  /* координаты положения */
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  /* фоновый цвет элемента */
+  background: #e0e0e0;
+  /* размещаем блок над всеми элементами на странице (это значение должно быть больше, чем у любого другого позиционированного элемента на странице) */
+  z-index: 1001;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.circle:before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: scale 2s infinite cubic-bezier(0, 0, 0.49, 1.02);
+}
+
+.circle-1 {
+  background-color: #7a5f1b;
+}
+.circle-1:before {
+  background-color: #7a5f1b;
+  animation-delay: 200ms;
+}
+
+.circle-2 {
+  background-color: #a17b1d;
+}
+.circle-2:before {
+  background-color: #a17b1d;
+  animation-delay: 400ms;
+}
+
+.circle-3 {
+  background-color: #bd8128;
+}
+.circle-3:before {
+  background-color: #bd8128;
+  animation-delay: 600ms;
+}
+
+.circle-4 {
+  background-color: #eb9515;
+}
+.circle-4:before {
+  background-color: #eb9515;
+  animation-delay: 800ms;
+}
+
+.circle-5 {
+  background-color: #f90;
+}
+.circle-5:before {
+  background-color: #f90;
+  animation-delay: 1000ms;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50%, 75% {
+    transform: scale(2.5);
+  }
+  78%, 100% {
+    opacity: 0;
+  }
+}
+.Background {
+  background-color: #fff;
+  overflow-x: hidden;
+  width: 100.01%;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f90;
+  height: 10px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+  background-color: #f9f9fd;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.head {
+  position: fixed;
+  z-index: 50;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.head:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 3;
+}
+
+.header_content {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  height: 100px;
+  align-items: center;
+}
+
+.header_burger {
+  display: none;
+}
+
+.Orange_Line {
+  position: absolute;
+  width: 100%;
+  background-color: #f90;
+  height: 2px;
+  margin-top: 100px;
+  z-index: 3;
+  box-shadow: 0 9px 21px #ff9900;
+}
+
+.header_list li {
+  margin: 0px 0px 0px 20px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 700;
+}
+
+.header_list {
+  position: absolute;
+  left: 10px;
+  bottom: 35px;
+  display: flex;
+  z-index: 5;
+}
+
+.header_m {
+  margin: auto;
+}
+
+.hedear_link {
+  width: 60px;
+  color: #000;
+  text-decoration: none;
+  font-size: 24px;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+
+.p1 {
+  width: 100%;
+  box-shadow: 0 2px 4px #ff9900;
+  margin-top: 100px;
+  margin-bottom: 50px;
+  position: relative;
+}
+
+.MainText {
+  font-family: "Oswald";
+  width: 350px;
+  right: 150px;
+  top: 250px;
+  font-size: 26px;
+  position: absolute;
+  z-index: 2;
+}
+
+.grid-container {
+  margin: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 12px 17px;
+  grid-template-areas: "BG1 BG1 BG1 BG2 BG2 BG2 BG2 BG2" "BG1 BG1 BG1 BG2 BG2 BG2 BG2 BG2" "BG1 BG1 BG1 BG2 BG2 BG2 BG2 BG2" "BG3 BG3 BG4 BG4 BG4 BG5 BG5 BG5" "BG3 BG3 BG4 BG4 BG4 BG5 BG5 BG5" "BG3 BG3 BG4 BG4 BG4 BG5 BG5 BG5";
+}
+
+.BG1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 5;
+  grid-area: BG1;
+  position: relative;
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.BG2 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 9;
+  grid-area: BG2;
+  position: relative;
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.BG4 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 5;
+  grid-area: BG4;
+  position: relative;
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.BG3 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: BG3;
+  position: relative;
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.BG5 {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 5;
+  -ms-grid-column: 11;
+  -ms-grid-column-span: 5;
+  grid-area: BG5;
+  position: relative;
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.ContactHeader {
+  position: absolute;
+  right: 12px;
+  bottom: 0px;
+  font-family: "Oswald";
+  z-index: 5;
+  font-size: 17px;
+}
+
+.ContactHeader li {
+  padding: 3px;
+}
+
+.FC {
+  font-family: "Oswald";
+  font-size: 20px;
+}
+
+.Number {
+  font-size: 20px;
+}
+
+.LogoText {
+  position: absolute;
+  right: 350px;
+  bottom: 23px;
+  z-index: 5;
+  font-size: 35px;
+  width: auto;
+  height: auto;
+  border: 0px solid #000000;
+  padding: 10px 20px;
+  cursor: pointer;
+  background: #f59b00;
+  border-radius: 40px 0px;
+  -ms-box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.12);
+  -o-box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.12);
+  box-shadow: 7px 7px 3px 0px rgba(0, 0, 0, 0.12);
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  text-shadow: 0px -1px 1px rgba(0, 0, 0, 0);
+}
+
+.TegName {
+  width: 100%;
+  font-family: "Oswald";
+  font-size: 40px;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.Pb {
+  transition: all 1s ease;
+  width: 100%;
+  border: 3px solid #f90;
+  filter: blur(1.8px);
+  width: 100%;
+}
+
+.Pb1.active {
+  -webkit-filter: blur(5px) grayscale(100%);
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.Pb2.active {
+  -webkit-filter: blur(5px) grayscale(100%);
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.Pb3.active {
+  -webkit-filter: blur(5px) grayscale(100%);
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.Pb4.active {
+  -webkit-filter: blur(5px) grayscale(100%);
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.Pb5.active {
+  -webkit-filter: blur(5px) grayscale(100%);
+  box-shadow: 0 2px 4px #ff9900;
+}
+
+.P1 {
+  height: 100%;
+}
+
+.NameBG {
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 2;
+  font-family: "Oswald";
+  font-size: 50px;
+  color: #fff;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 1px 7px 8px black, 0 0 1em #000;
+}
+
+.T2 {
+  margin-top: 60px;
+}
+
+.Ramka {
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #000000a4;
+}
+
+.NameWp {
+  position: absolute;
+  font-family: "Oswald";
+  font-size: 24px;
+  color: #fff;
+  text-decoration: underline;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  top: 10%;
+}
+
+.ListWp {
+  position: absolute;
+  font-family: "Oswald";
+  font-size: 20px;
+  color: #fff;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.ListWp {
+  margin: 0;
+  padding: 12px;
+  list-style: none;
+  width: 250px;
+}
+
+.ListWp li {
+  text-align: left;
+  padding-top: 5px;
+}
+
+.space {
+  margin-top: -100px;
+  position: absolute;
+}
+
+.NBG1.active {
+  display: none;
+}
+
+.NBG2.active {
+  display: none;
+}
+
+.NBG3.active {
+  display: none;
+}
+
+.NBG4.active {
+  display: none;
+}
+
+.NBG5.active {
+  display: none;
+}
+
+.ListBG {
+  display: none;
+}
+
+.LBG1 {
+  width: 350px;
+}
+
+.ListBG.active {
+  display: block;
+  position: absolute;
+  font-family: "Oswald";
+  font-size: 25px;
+  color: #f90;
+  -webkit-text-stroke: 1px #000;
+  text-shadow: 1px 7px 8px black, 0 0 1em #000;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  animation: Text 2s;
+  cursor: default;
+}
+
+@keyframes Text {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.HLC1.active {
+  text-decoration: underline;
+}
+
+.HLC2.active {
+  text-decoration: underline;
+}
+
+.HLC3.active {
+  text-decoration: underline;
+}
+
+.HLC4.active {
+  text-decoration: underline;
+}
+
+.HLC5.active {
+  text-decoration: underline;
+}
+
+.HLC6.active {
+  text-decoration: underline;
+}
+
+.TextAboutus {
+  font-size: 20px;
+  margin: 100px;
+}
+
+.ImgGr img {
+  border-top: 4px solid rgba(0, 0, 0, 0.2);
+  border-right: 4px solid rgba(0, 0, 0, 0.2);
+  border-left: 4px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px #ff9900;
+  object-fit: cover;
+}
+
+.ImgGr {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  margin: 10px;
+  justify-content: space-evenly;
+}
+
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: #fff;
+  position: absolute;
+  z-index: 3;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #f90;
+  width: 0%;
+}
